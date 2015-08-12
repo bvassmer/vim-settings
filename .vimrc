@@ -1,12 +1,5 @@
 set nocompatible
 
-" give me a home variable to work with
-if has('win32') || has ('win64')
-  let $VIMHOME = $VIM."/vimfiles"
-else
-  let $VIMHOME = $HOME."/.vim"
-endif
-
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -39,10 +32,6 @@ au BufRead,BufNewFile *.ejs set syntax=html
 
 map <F2> ysiw`
 nnoremap <leader>n :noh<CR>
-
-" change backup dir
-set backupdir=$VIMHOME/backup
-set directory=$VIMHOME/backup
 
 let g:vdebug_options = {     
       \'debug_file': 'vdebug_log',
