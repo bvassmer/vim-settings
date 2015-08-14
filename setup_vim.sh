@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone git@github.com:Raimondi/delimitMate.git ~/.vim/bundle/delimitMate
 git clone git@github.com:ervandew/supertab.git ~/.vim/bundle/supertab
 git clone git@github.com:scrooloose/syntastic.git ~/.vim/bundle/syntastic
