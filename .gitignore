@@ -1,7 +1,8 @@
 # Ignore everything
-*
+#*
+*.swo
+*.swn
 
 # But not these files...
-!.gitignore
 !.vimrc
 !setup_vim.sh

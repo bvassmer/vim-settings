@@ -32,6 +32,14 @@ au BufRead,BufNewFile *.ejs set syntax=html
 
 map <F2> ysiw`
 nnoremap <leader>n :noh<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright
 
 let g:vdebug_options = {     
       \'debug_file': 'vdebug_log',
