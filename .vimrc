@@ -41,6 +41,17 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+let g:airline_enable_hunks = 0
+let g:gitgutter_enable_hunks = 0
+
+" ale settings
+let g:ale_linters = {
+      \ 'javascript': ['eslint'],
+      \ 'javascript jsx': ['eslint'],
+      \ 'php': ['phpmd'],
+      \ 'css': ['stylelint'],
+      \}
+
 let g:vdebug_options = {     
       \'debug_file': 'vdebug_log',
       \'debug_file_level': 2,
@@ -48,9 +59,9 @@ let g:vdebug_options = {
       \'marker_default': '*',
       \'continuous_mode': 0,
       \'ide_key': 'vagrant',
-      \'break_on_open': 1,
+      \'break_on_open': 0,
       \'on_close': 'detach',
-      \'path_maps': {'/var/www/app': '/Users/benjaminvassmer/development/ccb'},
+      \'path_maps': {'/var/www/app': '/Users/benjaminvassmer/Development/churchcommunitybuilder/app', '/var/www/payments': '/Users/benjaminvassmer/Development/payments'},
       \'marker_closed_tree': '+',
       \'timeout': 20,
       \'port': 9000,
@@ -58,3 +69,4 @@ let g:vdebug_options = {
       \'debug_window_level': 1,
       \'server': '0.0.0.0'
       \}
+
